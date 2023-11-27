@@ -12,8 +12,33 @@
     height: 90vh;
     background: linear-gradient(180deg, #605DFF, #0B0960);
     position: absolute;
-    z-index: -1;
+    z-index: -4;
     top: 0;
+}
+
+#sun {
+    aspect-ratio: 1;
+    height: 5vw;
+    position: absolute;
+    z-index: -3;
+    right: 10vw;
+    top: 20vh;
+    border-radius: 50%;
+    background-color: #FFE589;
+    box-shadow: 0 0 10vw 7.5vw rgba(255, 229, 137, 0.70);
+}
+
+#mountains, #clouds {
+    position: absolute;
+    width: 100vw;
+}
+#mountains {
+    bottom: 22vh;
+    z-index: -2;
+}
+#clouds {
+    bottom: 5vh;
+    z-index: -1;
 }
 
 .title {
