@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+
+    font-family: Inter, sans-serif;
+    margin: 0;
+    border: none;
+    padding: 0;
+}
+
+#sky {
+    width: 100vw;
+    height: 90vh;
+    background: linear-gradient(180deg, #605DFF, #0B0960);
+    position: absolute;
+    z-index: -1;
+    top: 0;
+}
+
+.title {
+    color: white;
+    text-align: center;
+}
+h1.title {
+    font-size: 6rem;
+    margin-top: 50px;
+}
+p.title {
+    font-size: 1.5rem;
+}
+
+.title span {
+    display: inline-block;
+    transform: rotateZ(var(--r)) translateY(-100px);
+    opacity: 0;
+    animation: word-enter 500ms forwards var(--d) cubic-bezier(.04,.99,.43,1.5);
+}
+
+@keyframes word-enter {
+    from {
+
+    }
+    to {
+        transform: rotateZ(0) translateY(0);
+        opacity: 1;
+    }
+}
