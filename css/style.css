@@ -7,6 +7,10 @@
     padding: 0;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 #sky {
     width: 100vw;
     height: 90vh;
@@ -79,4 +83,12 @@ p.title {
         transform: rotateZ(0) translateY(0);
         opacity: 1;
     }
+}
+
+#my-projects {
+    margin-top: calc(90vh - 7.5rem - 50px);
+}
+
+h2 {
+    text-align: center;
 }
