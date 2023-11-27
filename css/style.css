@@ -37,8 +37,19 @@
     z-index: -2;
 }
 #clouds {
-    bottom: 5vh;
+    bottom: 10vh;
     z-index: -1;
+    height: 8vw;
+    overflow: hidden;
+}
+
+#clouds div {
+    aspect-ratio: 1;
+    position: absolute;
+    border-radius: 50%;
+    background-color: white;
+    height: var(--h);
+    transform: translateX(calc((var(--i) / 9) * 100vw + 100vw / 18 - 50%)) translateY(var(--y));
 }
 
 .title {
