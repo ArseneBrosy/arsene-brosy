@@ -16,7 +16,7 @@ body {
     height: 90vh;
     background: linear-gradient(180deg, #605DFF, #0B0960);
     position: absolute;
-    z-index: -4;
+    z-index: -5;
     top: 0;
 }
 
@@ -56,9 +56,18 @@ body {
     transform: translateX(calc((var(--i) / 9) * 100vw + 100vw / 18 - 50%)) translateY(var(--y));
 }
 
+#blank-space {
+    position: absolute;
+    background-color: white;
+    width: 100vw;
+    top: 90vh;
+}
+
 .title {
     color: white;
     text-align: center;
+    z-index: -4;
+    position: relative;
 }
 h1.title {
     font-size: 6rem;
@@ -87,6 +96,8 @@ p.title {
 
 #my-projects {
     margin-top: calc(90vh - 7.5rem - 50px);
+    position: relative;
+    z-index: 1;
 }
 
 h2 {
